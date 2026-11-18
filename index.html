@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400&display=swap"
+    />
+    <title>Göbeklitepe · 12.000 Yıllık Sergi</title>
+  </head>
+  <body>
+    <!-- Yükleme ekranı -->
+    <div class="yukleme" id="yukleme">
+      <p class="yukleme-mesaj" id="yuklemeMesaj">Taşlar diziliyor</p>
+      <p class="yukleme-sayi"><span id="yuklemeSayi">0</span></p>
+      <div class="yukleme-cizgi"><span id="yuklemeCizgi"></span></div>
+    </div>
+
+    <!-- Arka plandaki dev başlık: taş bunun önünde durur -->
+    <h1 class="dev-baslik" id="devBaslik" aria-label="Göbeklitepe">
+      <span>G</span><span>Ö</span><span>B</span><span>E</span><span>K</span><span>L</span><span>İ</span><span>T</span><span>E</span><span>P</span><span>E</span>
+    </h1>
+
+    <canvas class="sahne" id="sahne"></canvas>
+    <div class="karartma" id="karartma"></div>
+    <div class="gren"></div>
+    <div class="imlec" id="imlec"></div>
+
+    <header class="ust">
+      <a href="#" class="ust-marka">GT<span>·</span>9600</a>
+      <nav>
+        <a href="#zaman">Zaman</a>
+        <a href="#kabartmalar">Kabartmalar</a>
+        <a href="#halka">Halka</a>
+      </nav>
+      <a href="#ziyaret" class="ust-dugme">Ziyaret</a>
+    </header>
+
+    <main id="hikaye">
+      <section class="bolum bolum-giris">
+        <p class="etiket">MÖ 9600 · Şanlıurfa · Anadolu</p>
+        <p class="giris-alt">İnsanlığın bilinen en eski anıtsal yapısı</p>
+        <p class="kaydir">Kaydır <span></span></p>
+      </section>
+
+      <section class="bolum bolum-sol" id="zaman">
+        <p class="etiket">01 · Zamanın ötesinde</p>
+        <h2 class="buyuk-sayi"><span class="sayac" data-hedef="12000">0</span></h2>
+        <p class="alt-baslik">yıl önce</p>
+        <p class="metin">
+          Yazıdan, tekerlekten, hatta tarımdan bile önce. Avcı-toplayıcılar tonlarca
+          ağırlıktaki kireçtaşlarını oydu, taşıdı ve dev halkalar hâlinde dikti.
+        </p>
+      </section>
+
+      <section class="bolum bolum-sag" id="kabartmalar">
+        <p class="etiket">02 · Taşa kazınmış dünya</p>
+        <h2 class="baslik">Taşlar konuşuyor</h2>
+        <p class="metin">
+          Dikilitaşların üzerinde kollar, eller, kemerler ve onlarca hayvan.
+          T biçimli taşların her biri, belki de bir ataya ya da bir ruha ait.
+        </p>
+        <ul class="hayvanlar">
+          <li>Tilki</li><li>Yaban domuzu</li><li>Akbaba</li><li>Yılan</li><li>Akrep</li><li>Turna</li>
+        </ul>
+      </section>
+
+      <section class="bolum bolum-sol">
+        <p class="etiket">03 · Ölçek</p>
+        <h2 class="baslik">Piramitlerden 7.000 yıl önce</h2>
+        <div class="zaman-cizelgesi">
+          <div class="cizelge-satir"><span>Göbeklitepe</span><i style="--oran: 1"></i><b>MÖ 9600</b></div>
+          <div class="cizelge-satir"><span>Stonehenge</span><i style="--oran: .43"></i><b>MÖ 3000</b></div>
+          <div class="cizelge-satir"><span>Giza Piramitleri</span><i style="--oran: .39"></i><b>MÖ 2560</b></div>
+        </div>
+        <p class="metin kucuk">Çubuklar, yapıların bugünden geriye doğru yaşını gösteriyor.</p>
+      </section>
+
+      <section class="bolum bolum-sag" id="halka">
+        <p class="etiket">04 · Bir daire, bir dünya</p>
+        <h2 class="baslik">Halkanın ortasında iki dev</h2>
+        <p class="metin">
+          Dikilitaşlar daire biçiminde duvarlara gömülü; ortada ise karşılıklı iki dev taş yükselir.
+        </p>
+        <div class="olcuseler">
+          <div><strong>5,5 m</strong><span>en uzun taşlar</span></div>
+          <div><strong>10 ton</strong><span>ağırlığa varan</span></div>
+          <div><strong>1995</strong><span>kazıların başlangıcı</span></div>
+        </div>
+      </section>
+
+      <section class="bolum bolum-son" id="ziyaret">
+        <p class="etiket">UNESCO Dünya Mirası · 2018</p>
+        <h2 class="son-baslik">Tarihin<br /><em>sıfır noktası</em></h2>
+        <a href="#" class="son-dugme">Ziyaretini planla</a>
+        <p class="not">Bu sayfa resmî bir site değildir; eğitim amaçlı bir tasarım çalışmasıdır.</p>
+      </section>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
